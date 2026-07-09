@@ -135,6 +135,20 @@ setup_neovim() {
     jq              # JSON file formatter
     tree-sitter-cli # Syntax highlighting
     nixfmt          # nix language formatter
+    taplo # Toml language formatter
+
+    # Language Servers
+    lua-language-server
+    bash-language-server
+    buf
+    yaml-language-server
+    vscode-langservers-extracted
+    just-lsp
+    typescript-language-server
+    basedpyright
+    ruff
+    rust-analyzer
+    nil # nix language server
   )
   brew install -q "${tools[@]}"
 }
